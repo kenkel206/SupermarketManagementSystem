@@ -1,14 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SupermarketManagementSystem.Business
 {
+
+    [Table("Catagory")]
     internal class Catagory
     {
-        string categoryID { get; set; }
-        string CategorName { get; set; }
+        //ring categoryID { get; set; }
+        //string CategoryName { get; set; }
+
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public String CatagoryID { get; set; }
+
+
+        public String CatagoryName { get; set; }
+
+        public override string ToString()
+        {
+            return $"{CatagoryName}: {CatagoryID}";
+
+        }
+
+
     }
 }

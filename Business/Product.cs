@@ -1,23 +1,41 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SupermarketManagementSystem.Business
 {
-    internal class Product
+    [Table("Products")]
+    public class Product
     {
-        String ProductID { get; set; }
-        String ProductName { get; set; }
-        double CostPrice { get; set; }
-        long barcode { get; set; }
-        int TaxRate { get; set; }
-        string CategoryID { get; set; }
-        
-        string Brandunit { get; set; }
-        double sellingPrice { get; set; }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public string ProductID { get; set; }
+        [Required]
+        [MaxLength(30)]
+        public String ProductName { get; set; }
+        [Required]
+        [MaxLength(30)]
 
+        public double CostPrice { get; set; }
+        [Required]
+        [MaxLength(5)]
 
+        public long barcode { get; set; }
+        [Required]
+        [MaxLength(13)]
+
+        public double taxrate { get; set; }
+        [Required]
+        [MaxLength(5)]
+
+        public double sellingPrice { get; set; }
+
+        public override string ToString()
+        {
+            return $"{ProductName} : {sellingPrice}";
+
+        }
     }
+
+
 }

@@ -1,0 +1,2 @@
+C:\Users\Kenda\source\repos\kenkel206\SupermarketManagementSystem\obj\Debug\SupermarketManagementSystem.csproj.AssemblyReference.cache
+C:\Users\Kenda\source\repos\kenkel206\SupermarketManagementSystem\obj\Debug\SupermarketManagementSystem.csproj.CoreCompileInputs.cache

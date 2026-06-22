@@ -1,16 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SupermarketManagementSystem.Business
 {
-    internal class Supplier
+    [Table("Suppliers")]
+    public class Supplier
     {
-        String SupplierID { get; set; }
-        String Suppliername { get; set; }
-        int phoneNumber { get; set; }
-        int emailAddress { get; set; }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public String SupplierID { get; set; }
+        [Required]
+        [MaxLength(30)]
+
+        public String SupplierName { get; set; }
+        [Required]
+        [MaxLength(30)]
+
+        public int PhoneNumber { get; set; }
+        [Required]
+        [MaxLength(30)]
+
+        public String EmailAddress { get; set; }
+
+        public override string ToString()
+        {
+            return $"{SupplierName}: {PhoneNumber},{EmailAddress}";
+
+        }
+
     }
+
 }
