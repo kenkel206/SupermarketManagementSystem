@@ -1,17 +1,37 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SupermarketManagementSystem.Business
 {
-    internal class StockItem
+    [Table("Stockitem")]
+    public class Stockitem
     {
-        string StockID { get; set; }
-        string productId { get; set; }
-        int Quantity { get; set; }
-        DateTime ExpiryDate { get; set; }
-        int BatchNumber { get; set; }
+
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public String StockID { get; set; }
+        [Required]
+        [MaxLength(30)]
+
+        public String ProductID { get; set; }
+        [Required]
+        [MaxLength(30)]
+
+        public int Quantity { get; set; }
+        [Required]
+        [MaxLength(30)]
+        public int BatchNumber { get; set; }
+        [Required]
+        [MaxLength(30)]
+
+        public DateTime ExpiryDate { get; set; }
+
+        public override string ToString()
+        {
+            return $"{ProductID}:{ExpiryDate},{StockID}";
+
+        }
+
     }
 }
