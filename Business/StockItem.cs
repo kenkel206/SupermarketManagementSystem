@@ -10,11 +10,11 @@ namespace SupermarketManagementSystem.Business
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public String StockID { get; set; }
+        public int StockID { get; set; }
         [Required]
         [MaxLength(30)]
 
-        public String ProductID { get; set; }
+        public Product ProductID { get; set; }
         [Required]
         [MaxLength(30)]
 
@@ -30,8 +30,15 @@ namespace SupermarketManagementSystem.Business
         public override string ToString()
         {
             return $"{ProductID}:{ExpiryDate},{StockID}";
-
         }
+
+        //add 
+
+        //remove
+
+        //update
+
+        //linear search 
 
     }
 }

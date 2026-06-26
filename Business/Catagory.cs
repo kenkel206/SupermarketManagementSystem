@@ -6,24 +6,31 @@ namespace SupermarketManagementSystem.Business
 {
 
     [Table("Catagory")]
-    internal class Catagory
+    public class Catagory
     {
-        //ring categoryID { get; set; }
-        //string CategoryName { get; set; }
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public String CatagoryID { get; set; }
-
+        public int CatagoryID { get; set; }
+        [Required]
+        [MaxLength(30)]
 
         public String CatagoryName { get; set; }
+        [Required]
+        [MaxLength(30)]
+        public virtual Product Product { get; set; }
 
         public override string ToString()
         {
             return $"{CatagoryName}: {CatagoryID}";
-
         }
+        //add 
 
+        //remove
+
+        //update
+
+        //linear search 
 
     }
 }
