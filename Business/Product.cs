@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -124,6 +124,20 @@ namespace SupermarketManagementSystem.Business
                     }
                     return -1;
                 }
+            }
+        }
+    }
+
+        // linear search
+        public class ProductSearch
+        {
+            public int LinearSearch(int[] arr, int key)
+            {
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    if (arr[i] == key) return i;
+                }
+                return -1;
             }
         }
     }

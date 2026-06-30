@@ -37,6 +37,7 @@ namespace SupermarketManagementSystem.Business
             _context = context;
         }
 
+        //linear search 
 
 
     }
