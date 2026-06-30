@@ -35,6 +35,39 @@ namespace SupermarketManagementSystem.Business
             return $"{ProductName} : {sellingPrice}";
 
         }
+
+    //CRUD operations
+    public async Task<Product> GetByIDAsync(int id)
+        {
+            return await _context.Products
+                .Include(b => b.Catagory)
+                .FirstOrDefaultAsync(b => b.ProductID == id);
+        }
+
+    //add 
+    public async Task AddAsync(Product product)
+        {
+            await _context.Products.addAsync(product);
+            await _context.SaveChangesAsync();
+        }
+
+    //remove
+
+    //update
+
+    //linear search 
+
+    public class ProductSearch
+    {
+        public int LinearSearch(int[] arr,int key)
+        {
+            for (int i = 0;i < arr.Length; i++)
+            {
+                if (arr[i] == key) return i;
+            }
+            return -1;
+        }
+    
     }
 
 

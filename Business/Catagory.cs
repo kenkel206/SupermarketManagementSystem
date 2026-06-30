@@ -8,8 +8,6 @@ namespace SupermarketManagementSystem.Business
     [Table("Catagory")]
     internal class Catagory
     {
-        //ring categoryID { get; set; }
-        //string CategoryName { get; set; }
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
