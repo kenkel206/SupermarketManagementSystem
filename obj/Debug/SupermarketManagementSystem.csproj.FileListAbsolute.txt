@@ -1,2 +1,17 @@
 C:\Users\Kenda\source\repos\kenkel206\SupermarketManagementSystem\obj\Debug\SupermarketManagementSystem.csproj.AssemblyReference.cache
 C:\Users\Kenda\source\repos\kenkel206\SupermarketManagementSystem\obj\Debug\SupermarketManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\Kenda\source\repos\SupermarketManagementSystem\obj\Debug\SupermarketManagementSystem.csproj.AssemblyReference.cache
+C:\Users\Kenda\source\repos\SupermarketManagementSystem\obj\Debug\SupermarketManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\Kenda\source\repos\SupermarketManagementSystem\bin\Debug\SupermarketManagementSystem.exe.config
+C:\Users\Kenda\source\repos\SupermarketManagementSystem\bin\Debug\SupermarketManagementSystem.exe
+C:\Users\Kenda\source\repos\SupermarketManagementSystem\bin\Debug\SupermarketManagementSystem.pdb
+C:\Users\Kenda\source\repos\SupermarketManagementSystem\bin\Debug\Collections.NET.dll
+C:\Users\Kenda\source\repos\SupermarketManagementSystem\bin\Debug\EntityFramework.dll
+C:\Users\Kenda\source\repos\SupermarketManagementSystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Kenda\source\repos\SupermarketManagementSystem\bin\Debug\Collections.NET.pdb
+C:\Users\Kenda\source\repos\SupermarketManagementSystem\bin\Debug\Collections.NET.xml
+C:\Users\Kenda\source\repos\SupermarketManagementSystem\bin\Debug\EntityFramework.xml
+C:\Users\Kenda\source\repos\SupermarketManagementSystem\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kenda\source\repos\SupermarketManagementSystem\obj\Debug\Supermar.809275B2.Up2Date
+C:\Users\Kenda\source\repos\SupermarketManagementSystem\obj\Debug\SupermarketManagementSystem.exe
+C:\Users\Kenda\source\repos\SupermarketManagementSystem\obj\Debug\SupermarketManagementSystem.pdb

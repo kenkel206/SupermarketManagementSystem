@@ -1,37 +1,37 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity;
+using System.Linq;
+using System.Threading.Tasks;
+
 
 namespace SupermarketManagementSystem.Business
 {
     [Table("Stockitem")]
     public class Stockitem
     {
-
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public String StockID { get; set; }
-        [Required]
-        [MaxLength(30)]
+        public int StockID { get; set; }
 
-        public String ProductID { get; set; }
-        [Required]
-        [MaxLength(30)]
+        // Foreign key to Product
+        public int ProductID { get; set; }
+        [ForeignKey("ProductID")]
+        public virtual Product Product { get; set; }
 
         public int Quantity { get; set; }
-        [Required]
-        [MaxLength(30)]
         public int BatchNumber { get; set; }
-        [Required]
-        [MaxLength(30)]
-
         public DateTime ExpiryDate { get; set; }
+
+        // Foreign key to Supplier
+        public int SupplierID { get; set; }
+        [ForeignKey("SupplierID")]
+        public virtual Supplier Supplier { get; set; }
 
         public override string ToString()
         {
             return $"{ProductID}:{ExpiryDate},{StockID}";
-
         }
-
     }
 }
